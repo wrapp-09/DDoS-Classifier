@@ -1,5 +1,7 @@
 .venv/
 data/
 assets/
-saved_models/training_metrics.json
+saved_models/*.json
 __pycache__/
+research_paper/references/
+research_paper/draft.docx

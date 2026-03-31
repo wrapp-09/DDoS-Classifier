@@ -139,8 +139,8 @@ def train_model():
     final_acc = accuracy_score(all_targets, all_preds) * 100
     print(f"Overall Test Accuracy: {final_acc:.2f}%")
 
-    torch.save(autoencoder.state_dict(), './saved_models/autoencoder_99.pth')
-    torch.save(classifier.state_dict(), './saved_models/bilstm_classifier_99.pth')
+    torch.save(autoencoder.state_dict(), './saved_models/autoencoder.pth')
+    torch.save(classifier.state_dict(), './saved_models/bilstm_classifier.pth')
     print("Model weights successfully saved")
 
     cm = confusion_matrix(all_targets, all_preds)
