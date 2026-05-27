@@ -70,6 +70,3 @@ Evaluated on a strictly unseen Test Day distribution containing novel Zero-Day a
 * **Overall Accuracy:** 99.15%
 * **Macro F1-Score:** > 99.00%
 * Successfully demonstrated that shrinking the temporal window (`time_steps=3`) dramatically improves the recall of burst-based Reflection attacks compared to standard MLP architectures.
-
-## Limitations & Future Work
-While the model achieves near-perfect classification within the 2019 distribution, cross-dataset testing against CIC-IDS-2017 highlighted vulnerabilities to Feature Drift caused by updates in the `CICFlowMeter` extraction software. Future work will explore Domain Adversarial Neural Networks (DANN) to build entirely environment-agnostic models.
